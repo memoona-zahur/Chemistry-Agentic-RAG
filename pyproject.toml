@@ -1,0 +1,25 @@
+[project]
+name = "chemistry-agentic-rag"
+version = "0.1.0"
+description = "Chemistry Agentic RAG System using Cohere and Qdrant"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    # Agentic Framework dependencies
+    "openai-agents",                     # Agentic Framework for building agents
+    
+    # Core RAG dependencies
+    "cohere>=5.11.4",                    # Cohere API for embeddings
+    "qdrant-client>=1.12.1",             # Qdrant vector database client
+    
+    # LangChain for document processing
+    "langchain>=0.3.13",                 # Core LangChain library
+    "langchain-community>=0.3.13",       # Community integrations (PyPDFLoader)
+    "langchain-text-splitters>=0.3.2",   # Text splitting utilities
+    
+    # PDF processing
+    "pypdf>=5.1.0",                      # PDF parsing (used by PyPDFLoader)
+    
+    # Environment variables
+    "python-dotenv>=1.0.1",              # Load .env files
+]
